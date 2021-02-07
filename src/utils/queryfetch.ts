@@ -1,5 +1,4 @@
-import { match } from "assert";
-import axios, { AxiosResponse } from "axios";
+import axios from "axios";
 
 import { IQueryProps } from "../utils/query.t";
 

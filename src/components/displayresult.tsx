@@ -1,19 +1,11 @@
 import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
 import { useQuery } from "react-query";
 import Loader from "react-loader-spinner";
-import { useHistory } from "react-router-dom";
-
-import {
-  TQuery,
-  IQueryProps,
-  ICharacterQueryProps,
-  Character,
-} from "../utils/query.t";
+import { TQuery, IQueryProps, Character } from "../utils/query.t";
 import { fetchData, fetchCharacters } from "../utils/queryfetch";
 import { useCallback, useEffect, useState } from "react";
 
 export default function DisplayResult(props: TQuery) {
-  const history = useHistory();
   const { query } = props;
 
   const findMatch = useCallback(() => {
